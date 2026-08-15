@@ -26,6 +26,19 @@ Short answer: yes, and you can prove it yourself. Here is why you can trust it.
 
 This is a personal automation tool. You log in with **your own** credentials to manage **your own** cards.
 
+### VirusTotal scans (v1.0.0)
+
+Every `v1.0.0` binary was scanned by [VirusTotal](https://www.virustotal.com). Click a report to see the full multi-engine result:
+
+| Binary | SHA256 | VirusTotal report |
+|---|---|---|
+| `merc-windows-amd64.exe` | `4103da6cf753beb1dcacea4e8a6cdbd472175f59fb5531d16c4b735832e282fd` | [report](https://www.virustotal.com/gui/file/4103da6cf753beb1dcacea4e8a6cdbd472175f59fb5531d16c4b735832e282fd) |
+| `merc-linux-amd64` | `ac1fb3338e317df222d5d2575632b837174b03eb8a28342692320610d4c96236` | [report](https://www.virustotal.com/gui/file/ac1fb3338e317df222d5d2575632b837174b03eb8a28342692320610d4c96236) |
+| `merc-darwin-amd64` | `c959a08d97d1f9d9ebb025b8af3451c098479bc956a02829f019ba541b1e3345` | [report](https://www.virustotal.com/gui/file/c959a08d97d1f9d9ebb025b8af3451c098479bc956a02829f019ba541b1e3345) |
+| `merc-darwin-arm64` | `f6ecd1a60ec6fd892a074e59d3a81a9bf510d50dd2e9f6ef8bd074bd0f6e2655` | [report](https://www.virustotal.com/gui/file/f6ecd1a60ec6fd892a074e59d3a81a9bf510d50dd2e9f6ef8bd074bd0f6e2655) |
+
+The SHA256 values above match `SHA256SUMS.txt` in the [v1.0.0 release](https://github.com/moody2real/merc-vcc-gen/releases/tag/v1.0.0). Verify your download matches before running it. Future releases are scanned automatically by the release workflow.
+
 ---
 
 ## Install
