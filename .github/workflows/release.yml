@@ -45,10 +45,13 @@ jobs:
       # Add it under Settings -> Secrets and variables -> Actions.
       # Without the secret this step is skipped and the release still succeeds.
       - name: Upload binaries to VirusTotal
-        if: ${{ secrets.VIRUSTOTAL_API_KEY != '' }}
         env:
           VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
         run: |
+          if [ -z "${VIRUSTOTAL_API_KEY}" ]; then
+            echo "VIRUSTOTAL_API_KEY not set; skipping VirusTotal scan."
+            exit 0
+          fi
           : > dist/VIRUSTOTAL.txt
           echo "## VirusTotal scans" >> "$GITHUB_STEP_SUMMARY"
           for f in dist/merc-*; do
