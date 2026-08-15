@@ -17,10 +17,10 @@ fluz_profile/
 chrome/
 assets/
 
-# Build artifacts
-merc
-merc.exe
-merc.exe~
+# Build artifacts (root binary only, not the cmd/merc source dir)
+/merc
+/merc.exe
+/merc.exe~
 dist/
 *.exe
 *.exe~
