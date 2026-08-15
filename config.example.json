@@ -1,0 +1,32 @@
+{
+  "provider": "mercury",
+  "mercury": {
+    "email": "",
+    "password": "",
+    "totpSecret": ""
+  },
+  "fluz": {
+    "apiKey": "",
+    "userId": "",
+    "accountId": "",
+    "seatId": ""
+  },
+  "proxy": {
+    "host": "",
+    "port": 0,
+    "username": "",
+    "password": ""
+  },
+  "card": {
+    "dailyLimit": 1000,
+    "zip": "10001",
+    "nickname": "card",
+    "delaySeconds": 1
+  },
+  "browser": {
+    "chromePath": "",
+    "userDataDir": "browser_profile_go",
+    "headless": true
+  },
+  "debug": false
+}

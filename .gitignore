@@ -1,0 +1,29 @@
+# Secrets & sessions — NEVER commit these
+config.json
+session.json
+session.json.tmp
+config.json.tmp
+fluz_cookie.txt
+fluz_session.json
+
+# Generated card output
+data/
+*.txt
+!SHA256SUMS.txt
+
+# Browser profiles / downloaded chrome
+browser_profile_go/
+fluz_profile/
+chrome/
+assets/
+
+# Build artifacts
+merc
+merc.exe
+merc.exe~
+dist/
+*.exe
+*.exe~
+
+# Archives / misc
+*.rar
